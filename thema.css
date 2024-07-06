@@ -1,40 +1,110 @@
-body {
-	font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
-	font-size: 13px;
-	background: #cecece;
-}
-/* Стили заголовка */
-.head {
-	font-size: 70px;
-	margin: 70px auto;
-	text-align: center;
-	color: #fff;
-	text-shadow: 0px 1px 1px #ddd,
-		0px 2px 1px #d6d6d6,
-		0px 3px 1px #ccc,
-		0px 4px 1px #c5c5c5,
-		0px 5px 1px #c1c1c1,
-		0px 6px 1px #bbb,
-		0px 7px 1px #777,
-		0px 8px 3px rgba(100, 100, 100, 0.4),
-		0px 9px 5px rgba(100, 100, 100, 0.1),
-		0px 10px 7px rgba(100, 100, 100, 0.15),
-		0px 11px 9px rgba(100, 100, 100, 0.2),
-		0px 12px 11px rgba(100, 100, 100, 0.25),
-		0px 13px 15px rgba(100, 100, 100, 0.3);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+
+html { 
+    overflow:  hidden; 
 }
 
-/* Полпись */
-.info{
-  color:rgba(78, 78, 78, 0.8);
+body{
+  font-family: 'Open Sans', sans-serif;
+  background:#4FA2D9;
+  color:white;
+  text-align:center;
+}
+
+h1{
+  font-family: 'Audiowide';
+  font-size:5em;
+  position:absolute; top:0; bottom:0; left:0; right:0;
+	margin:auto; height:240px; width:70%;  
+  
+  -webkit-animation: floating-text 2s ease alternate infinite;
+     -moz-animation: floating-text 2s ease alternate infinite;
+      -ms-animation: floating-text 2s ease alternate infinite;
+       -o-animation: floating-text 2s ease alternate infinite;
+          animation: floating-text 2s ease alternate infinite;
+}
+
+p{
+  color:rgba(255,255,255,.5);
+  position:absolute;
   width:100%;
-  text-align: center;
+  bottom:10em;
   font-weight:300;
 }
-.info a {
-    color: #888;
-    text-decoration:none;
+
+a{
+  text-decoration:none;
+  color:#fff;
 }
-.info a:hover {
-    color: #fff;
+
+@-webkit-keyframes floating-text {
+  0% {  
+    -webkit-transform: translateY(.1em);
+    text-shadow:0 0 .5em rgba(255,255,255,.4),
+      0 0 .2em rgba(0,0,0,.3),
+      0 .3em .2em rgba(0,0,0,.3);
+
+  }
+  100% {
+    text-shadow:0 0 .5em rgba(255,255,255,.4),
+      0 0 .2em rgba(0,0,0,.3),
+      0 .5em .5em rgba(0,0,0,.3);
+  }
+}
+@-moz-keyframes floating-text {
+  0% {  
+    -moz-transform: translateY(.1em);
+    text-shadow:0 0 .5em rgba(255,255,255,.4),
+      0 0 .2em rgba(0,0,0,.3),
+      0 .3em .2em rgba(0,0,0,.3);
+
+  }
+  100% {
+    text-shadow:0 0 .5em rgba(255,255,255,.4),
+      0 0 .2em rgba(0,0,0,.3),
+      0 .5em .5em rgba(0,0,0,.3);
+  }
+}
+@-ms-keyframes floating-text {
+  0% {  
+    -ms-transform: translateY(.1em);
+    text-shadow:0 0 .5em rgba(255,255,255,.4),
+      0 0 .2em rgba(0,0,0,.3),
+      0 .3em .2em rgba(0,0,0,.3);
+
+  }
+  100% {
+    text-shadow:0 0 .5em rgba(255,255,255,.4),
+      0 0 .2em rgba(0,0,0,.3),
+      0 .5em .5em rgba(0,0,0,.3);
+  }
+}
+@-o-keyframes floating-text {
+  0% {  
+    -o-transform: translateY(.1em);
+    text-shadow:0 0 .5em rgba(255,255,255,.4),
+      0 0 .2em rgba(0,0,0,.3),
+      0 .3em .2em rgba(0,0,0,.3);
+
+  }
+  100% {
+    text-shadow:0 0 .5em rgba(255,255,255,.4),
+      0 0 .2em rgba(0,0,0,.3),
+      0 .5em .5em rgba(0,0,0,.3);
+  }
+}
+@keyframes floating-text {
+  0% {  
+    transform: translateY(.1em);
+    text-shadow:0 0 .5em rgba(255,255,255,.4),
+      0 0 .2em rgba(0,0,0,.3),
+      0 .3em .2em rgba(0,0,0,.3);
+
+  }
+  100% {
+    text-shadow:0 0 .5em rgba(255,255,255,.4),
+      0 0 .2em rgba(0,0,0,.3),
+      0 .5em .5em rgba(0,0,0,.3);
+  }
 }
